@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Thakur Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('bubble-1.jpg');
+            color: #f0f0f0;
+        }
+        .container {
+            padding: 20px;
+        }
+
+        /* Intro Section */
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+        }
+
+        .intro .text {
+            max-width: 60%;
+            height: 300px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .intro .text h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: white;
+            font-family: 'Fraktur', serif;
+        }
+
+        .intro .text h2 {
+            font-size: 1.5em;
+            margin: 10px 0 0;
+            color: white;
+            font-family: 'Georgia', serif;
+        }
+
+        .intro .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid white;
+            position: relative;
+        }
+
+        .intro .circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about {
+            text-align: center;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .about h2 {
+            margin: 0;
+            font-size: 2em;
+            color: white;
+            font-family: 'Georgia', serif;
+            margin-top:2%;
+        }
+
+        .about p {
+            font-family: 'Black Jack';
+            margin-top: 10px;
+            font-size: 13px;
+            line-height: 1.5;
+            color: #e0e0e0;
+            text-align: center;
+            margin-top: 7%;
+        }
+
+        .work-experience {
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .work-experience h2 {
+            text-align: center;
+            color: white;
+            font-size: 2em;
+            margin: 0;
+            font-family: 'Georgia', serif;
+            margin-top: 5%;
+        }
+
+        .work-experience p {
+            margin-top: 10px;
+            font-size: 13px;
+            text-align: center;
+            color: #e0e0e0;
+            margin-top: 6%;
+            margin-bottom: 3%;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding: 0;
+            margin-top: 5%;
+        }
+
+        .project-card {
+            position: relative;
+            width: 30%;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .popup {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .project-card:hover .popup {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Introduction Section -->
+    <div class="intro">
+        <div class="text">
+            <h1>I AM ANKIT THAKUR</h1>
+            <h2>AGRICULTURE EXPERT</h2>
+        </div>
+        <div class="circle">
+            <img src="ankit.jpg" alt="Ankit Thakur"> <!-- Replace with your local image -->
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="about">
+        <h2>ABOUT ME</h2>
+        <p>I'm Ankit Thakur, a graduate from CSKHPKV Palampur (HP). I am passionate about agriculture and have worked on projects like Natural Farming, Bee Keeping, and Organic Farming. Currently, I work at MERA FARMHOUSE as an Agriculture Expert, contributing my expertise to promote sustainable farming practices.</p>
+    </div>
+
+    <!-- Work Experience Section -->
+    <div class="work-experience">
+        <h2>WORK EXPERIENCE</h2>
+        <p>Currently working at MERA FARMHOUSE as an Agriculture Expert. Experienced in Natural Farming, Bee Keeping, and Organic Farming projects.</p>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects">
+        <div class="project-card">
+            <img src="beekeep.jpeg" alt="Natural Farming"> <!-- Replace with your local image -->
+            <div class="popup">Project: Natural Farming<br>Brief: Promoting sustainable and eco-friendly farming techniques.</div>
+        </div>
+        <div class="project-card">
+            <img src="organic.jpg" alt="Bee Keeping"> <!-- Replace with your local image -->
+            <div class="popup">Project: Bee Keeping<br>Brief: Enhancing pollination and honey production through beekeeping projects.</div>
+        </div>
+        <div class="project-card">
+            <img src="natural farmong.jpg" alt="Organic Farming"> <!-- Replace with your local image -->
+            <div class="popup">Project: Organic Farming<br>Brief: Implementing organic practices to improve soil health and crop quality.</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
